@@ -360,7 +360,7 @@ html{
      #menu-activate{
     text-align: right;
     display:block ;
-    font-size:1.5em ;
+    font-size:1.0em ;
  } 
  #menu-activate p{
     text-align: right;
@@ -397,7 +397,7 @@ html{
 
      width:80% ;
      height:600px;
-     right:-80px;
+     right:-50px;
      z-index: 1;
      display:none;
 }
