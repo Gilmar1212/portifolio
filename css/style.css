@@ -21,7 +21,7 @@ html{
     min-height:890px;
 
     background-color:rgb(75, 70, 70);
-    z-index:1 ;
+    z-index:2000 ;
 }
 .modal-loading h2{
     color:white;
@@ -45,19 +45,20 @@ html{
 .rotacao{
     animation:load 1.500s ease-in-out infinite ;
 }
-#Menu{
+
+.Menu{
     
     background-color:rgb(75, 70, 70);
-    min-width:100%;
+    width:100%;
     height:100px;
     box-shadow: 1px 1px 3px rgb(14, 13, 13);
 }
-#Menu img{
+.Menu img{
     margin-left:-50px;
     width:205px;
     height:95px;
 }
-#Menu li{
+.Menu li{
     display:inline-block;
     padding-right: 20px;
     float: right;
@@ -76,9 +77,10 @@ html{
     color:white;
     text-align:center ;
 }
-#tecnologias ul li{
+#tecnologias ul li,h2{
    margin:20px 0;
 }
+
 #sobre-mim h2{
     text-align:center;
     color:white;
@@ -100,18 +102,18 @@ html{
 }
 
 
-#Menu ul{
+.Menu ul{
    margin-top:-45px;
 }
 
-#Menu a{
+.Menu a{
     text-decoration:none;
     color:#7e7e7a;
     font-size:1.2em;
     font-weight:bold;
     transition:0.5s;
 }
-    #Menu a:hover{
+    .Menu a:hover{
     color:whitesmoke;
     transition:0.5s;
 }
@@ -154,8 +156,8 @@ html{
 }
 .modal-imagens-hidden img{
     background-size: cover;
-    width:100%;
-    height:900px;
+    width:60%;
+    height:60%;
 }
 .modal-imagens-visible{
     position:fixed;
@@ -261,7 +263,7 @@ html{
 }
 #topper {
     display:flex;
-    justify-content:center;
+    justify-content:center ;
 }
 #contato img{
     height:45px;
@@ -330,7 +332,7 @@ html{
     .wrap{
         width:80%;
     }
-    #Menu nav{
+    .Menu nav{
     
   display:flex;
   flex-direction:column ;
@@ -339,61 +341,79 @@ html{
 
 }
 }
- #Menu nav li{
+ .Menu nav li{
     padding-top:6px;
 
 }
+ #menu-activate p{
+    text-align: right;
+    display:none;
+ } 
+  
+@media (max-width:564px){
+ #menu-activate p{
+    text-align: right;
+    display:block ;
+    font-size:1.5em ;
+ } 
 
-@media (max-width:560px){
-    .legend-img-top{
+.legend-img-top{
     color:white;
     position: absolute;
 }
 
-    #Imagens-template div{
+#Imagens-template div{
         height:100px;
     }
-     #Imagens-template img{
-
-        
-
-        
-    } 
-    #contato fieldset{
+#contato fieldset{
     display:flex;
     flex-direction: column;
     flex-wrap: wrap;
     justify-content:center;
 
 }
-  #contato fieldset a{
+#contato fieldset a{
     width:100%;
     margin-top:10px;
      
     }
-    .wrap{
+.wrap{
         width:80%;
     }
-    #Menu nav{
-    
+ 
+.Menu {
+    position:absolute;
+
+     width:50% ;
+     height:600px;
+     right:-100px;
+     z-index: 1;
+     display:none;
+}
+  .menuShow{
+    display: block;
+}
+
+.Menu nav{
   display:flex;
   flex-direction:column ;
   align-items: flex-end;
   margin-top: -60px;
 
 }
+    
+ .Menu nav li{
+    padding-top:6px;
+    overflow: hidden;
+}
 
 .modal-loading{
  
     width:100%;
    
-}
-}
- #Menu nav li{
-    padding-top:6px;
 
 }
-
+}
 
 @keyframes load {
     to{

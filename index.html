@@ -20,9 +20,11 @@
         <div class="loading"></div>
         <h2>Carregando...</h2>
     </div>
-    <header id="Menu">
+    <a href="#"id="menu-activate"><p><i class="fas fa-bars"></i></p></a>
+    <header class="Menu">
 
                 <img src="imagens/Pierrouse-fundo-transparente-branco-min.png" alt="Logomarca">
+
                 <ul >
                     <nav>
                     <li><a href="#contato">Contato</a></li>
@@ -119,7 +121,14 @@
 <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js
 "></script>
-
+<script type="text/javascript">
+  var menuActivate = document.querySelector("#menu-activate");
+  var menu = document.querySelector(".Menu");
+  menuActivate.addEventListener("click",()=>{
+   menu.classList.toggle("menuShow");
+  });
+  menuActivate.removeEventListener();
+</script>
       <script type="text/javascript">
                     
   $('.carousel').slick({
@@ -130,7 +139,7 @@
   slidesToScroll: 4,
   adaptiveHeight: false,
   autoplay: true,
-  autoplaySpeed: 1000,
+  autoplaySpeed: 3000,
   responsive: [
     {
       breakpoint: 1024,
