@@ -355,7 +355,7 @@ html{
 .logo{
    
    margin-left: 50px;
-   height:120px;
+   height:100px;
 }
      #menu-activate{
     text-align: right;
@@ -395,9 +395,9 @@ html{
 .Menu {
     position:absolute;
 
-     width:80% ;
+     width:60% ;
      height:600px;
-     right:-50px;
+     right:0px;
      z-index: 1;
      display:none;
 }
