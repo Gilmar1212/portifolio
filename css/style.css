@@ -96,7 +96,7 @@ html{
     font-size: 2.5em;
     color:white;
     position: absolute;
-    margin-left:35%;
+
 }
 
 
@@ -259,8 +259,9 @@ html{
 .social-media{
     color:white;
 }
-legend{
-    font-size: 1.5em;
+#topper {
+    display:flex;
+    justify-content:center;
 }
 #contato img{
     height:45px;
@@ -303,7 +304,6 @@ legend{
     .legend-img-top{
     color:white;
     position: absolute;
-    margin-left:19%;
 }
 
     #Imagens-template {
@@ -348,7 +348,6 @@ legend{
     .legend-img-top{
     color:white;
     position: absolute;
-    margin-left:19%;
 }
 
     #Imagens-template div{
