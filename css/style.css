@@ -78,7 +78,7 @@ html{
     color:white;
     text-align:center ;
 }
-#tecnologias ul li,h2{
+#tecnologias ul li{
    margin:20px 0;
 }
 
@@ -141,7 +141,7 @@ html{
 
 .modal-imagens-hidden{
     overflow-y: scroll;
-    margin-top:-755px;
+    margin-top:-600px;
     width:100%;
     height:920px;
     position:fixed;
@@ -157,8 +157,8 @@ html{
 }
 .modal-imagens-hidden img{
     background-size: cover;
-    width:60%;
-    height:60%;
+    width:100%;
+    height:auto;
 }
 .modal-imagens-visible{
     position:fixed;
@@ -351,12 +351,18 @@ html{
     display:none;
  } 
   
-@media (max-width:564px){
+@media (max-width:560px){
+    .modal-imagens-hidden{
+    margin-top:-650px;
+    
+    
+}
 .logo{
    
    margin-left: 50px;
    height:100px;
 }
+
      #menu-activate{
     text-align: right;
     display:block ;
