@@ -53,9 +53,9 @@ html{
     height:100px;
     box-shadow: 1px 1px 3px rgb(14, 13, 13);
 }
-.Menu img{
-    margin-left:-50px;
-    width:205px;
+.logo {
+    margin-left:-60px;
+
     height:95px;
 }
 .Menu li{
@@ -351,6 +351,11 @@ html{
  } 
   
 @media (max-width:564px){
+.logo{
+   
+   margin-left: 50px;
+   height:120px;
+}
  #menu-activate p{
     text-align: right;
     display:block ;
@@ -384,9 +389,9 @@ html{
 .Menu {
     position:absolute;
 
-     width:50% ;
+     width:80% ;
      height:600px;
-     right:-100px;
+     right:-80px;
      z-index: 1;
      display:none;
 }
@@ -398,14 +403,23 @@ html{
   display:flex;
   flex-direction:column ;
   align-items: flex-end;
-  margin-top: -60px;
+  margin-top: 60px;
 
 }
     
  .Menu nav li{
     padding-top:6px;
     overflow: hidden;
+    width:80%;
+    float:right;
 }
+ .Menu nav li{
+    padding-top:6px;
+    overflow: hidden;
+    width:80%;
+    float:right;
+}
+
 
 .modal-loading{
  
